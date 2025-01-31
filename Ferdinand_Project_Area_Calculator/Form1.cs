@@ -13,7 +13,7 @@ namespace Ferdinand_Project_Area_Calculator
             {
                 Compute2 rect = new Compute2(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text));
                 textBox6.Text = Convert.ToString(rect.Rectangle(rect.Length, rect.Width));
-                listBox1.Items.Add("The are of Rectangle is : " + textBox6.Text);
+                listBox1.Items.Add("The area of Rectangle is : "+textBox6.Text);
             }
             else
             {
