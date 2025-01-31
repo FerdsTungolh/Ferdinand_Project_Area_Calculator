@@ -13,14 +13,13 @@ namespace Ferdinand_Project_Area_Calculator
             {
                 Compute2 rect = new Compute2(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text));
                 textBox6.Text = Convert.ToString(rect.Rectangle(rect.Length, rect.Width));
-                listBox1.Items.Add("The are of Rectangle is : "+textBox6.Text);
+                listBox1.Items.Add("The are of Rectangle is : " + textBox6.Text);
             }
             else
             {
                 MessageBox.Show("Error Either Length or Width is EMPTY");
             }
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (listBox1.Visible != false)
@@ -57,18 +56,50 @@ namespace Ferdinand_Project_Area_Calculator
                 MessageBox.Show("Error Radius is EMPTY");
             }
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (textBox4.Text != "" && textBox5.Text != "")
             {
                 Compute3 tria = new Compute3(Convert.ToDouble(textBox4.Text), Convert.ToDouble(textBox5.Text));
                 textBox6.Text = Convert.ToString(tria.Triangle(tria.BaseLength, tria.Height));
-                listBox1.Items.Add("The area of Triangle is : "+textBox6.Text);
+                listBox1.Items.Add("The area of Triangle is : " + textBox6.Text);
             }
             else
             {
                 MessageBox.Show("Error Either Base or Height is EMPTY");
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Ferdinand_Project_Area_Calculator
         }
         public double Rectangle(double Length, double Width)
         {
-            return (Width * Length);
+            return 2 * (Width * Length);
         }
     }
 }

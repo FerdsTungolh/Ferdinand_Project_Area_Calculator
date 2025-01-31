@@ -65,7 +65,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 2;
-        
             // 
             // textBox3
             // 
@@ -229,7 +228,7 @@
             textBox6.Size = new Size(515, 22);
             textBox6.TabIndex = 16;
             textBox6.TextAlign = HorizontalAlignment.Center;
-  
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label7
             // 
@@ -243,7 +242,7 @@
             label7.TabIndex = 17;
             label7.Text = "History";
             label7.Visible = false;
- 
+            label7.Click += label7_Click;
             // 
             // panel1
             // 
