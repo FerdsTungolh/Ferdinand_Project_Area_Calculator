@@ -44,12 +44,6 @@ namespace Ferdinand_Project_Area_Calculator
                 button5.Visible = true;
             }
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox3.Text != "")
@@ -63,12 +57,6 @@ namespace Ferdinand_Project_Area_Calculator
                 MessageBox.Show("Error Radius is EMPTY");
             }
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (textBox4.Text != "" && textBox5.Text != "")
@@ -81,26 +69,6 @@ namespace Ferdinand_Project_Area_Calculator
             {
                 MessageBox.Show("Error Either Base or Height is EMPTY");
             }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
